@@ -4,7 +4,7 @@ Global $Socket
 Global $Recibe
 
 Global $IP 
-Global $sDnsAddr = "xjhdshsdhagsafhg.ddns.net"
+Global $sDnsAddr = 
 Global $PORT = 1234
 
 $IP = "127.0.0.1"
