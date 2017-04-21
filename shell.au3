@@ -5,7 +5,7 @@ Global $Recibe
 
 Global $IP 
 Global $sDnsAddr = "<your dns>"
-Global $PORT = 1234
+Global $PORT = 5222
 
 ;$IP = "127.0.0.1"
 
